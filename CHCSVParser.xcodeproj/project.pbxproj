@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E8B01E81C0AB6540061571D /* CHCSVParserKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8B01E71C0AB6540061571D /* CHCSVParserKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8B01ED1C0AB65F0061571D /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B9931F160E376100D6548A /* CHCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8B01EE1C0AB65F0061571D /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B99320160E376100D6548A /* CHCSVParser.m */; };
 		550ED4281973491500E7D173 /* Issue64.csv in Resources */ = {isa = PBXBuildFile; fileRef = 550ED4271973491500E7D173 /* Issue64.csv */; };
 		5515D4461AAB72FF00DC1D5B /* Issue79.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5515D4451AAB72FF00DC1D5B /* Issue79.csv */; };
 		557FCEB61203F938009FCDBA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557FCEB51203F938009FCDBA /* CoreServices.framework */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4E8B01E51C0AB6540061571D /* CHCSVParserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCSVParserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8B01E71C0AB6540061571D /* CHCSVParserKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCSVParserKit.h; sourceTree = "<group>"; };
+		4E8B01E91C0AB6540061571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550ED4271973491500E7D173 /* Issue64.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Issue64.csv; sourceTree = "<group>"; };
 		5515D4451AAB72FF00DC1D5B /* Issue79.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Issue79.csv; sourceTree = "<group>"; };
 		5560A19E173743A300DDD1D3 /* UnitTestContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTestContent.h; sourceTree = "<group>"; };
@@ -38,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E8B01E11C0AB6540061571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		557FD0501204A70D009FCDBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +77,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				5560A19D1737433900DDD1D3 /* Unit Tests */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				4E8B01E61C0AB6540061571D /* CHCSVParserKit */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = CHCSVParser;
@@ -94,8 +108,18 @@
 			children = (
 				8DD76FA10486AA7600D96B5E /* CHCSVParser */,
 				557FD0531204A70D009FCDBA /* Unit Tests.xctest */,
+				4E8B01E51C0AB6540061571D /* CHCSVParserKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E8B01E61C0AB6540061571D /* CHCSVParserKit */ = {
+			isa = PBXGroup;
+			children = (
+				4E8B01E71C0AB6540061571D /* CHCSVParserKit.h */,
+				4E8B01E91C0AB6540061571D /* Info.plist */,
+			);
+			path = CHCSVParserKit;
 			sourceTree = "<group>";
 		};
 		5516BCBA12578DA90025F235 /* CHCSVParser */ = {
@@ -123,7 +147,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4E8B01E21C0AB6540061571D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E8B01E81C0AB6540061571D /* CHCSVParserKit.h in Headers */,
+				4E8B01ED1C0AB65F0061571D /* CHCSVParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		4E8B01E41C0AB6540061571D /* CHCSVParserKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E8B01EC1C0AB6540061571D /* Build configuration list for PBXNativeTarget "CHCSVParserKit" */;
+			buildPhases = (
+				4E8B01E01C0AB6540061571D /* Sources */,
+				4E8B01E11C0AB6540061571D /* Frameworks */,
+				4E8B01E21C0AB6540061571D /* Headers */,
+				4E8B01E31C0AB6540061571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHCSVParserKit;
+			productName = CHCSVParserKit;
+			productReference = 4E8B01E51C0AB6540061571D /* CHCSVParserKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		557FD0521204A70D009FCDBA /* Unit Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 557FD0571204A70E009FCDBA /* Build configuration list for PBXNativeTarget "Unit Tests" */;
@@ -166,6 +220,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
+				TargetAttributes = {
+					4E8B01E41C0AB6540061571D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "CHCSVParser" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -183,11 +242,19 @@
 			targets = (
 				8DD76F960486AA7600D96B5E /* CHCSVParser */,
 				557FD0521204A70D009FCDBA /* Unit Tests */,
+				4E8B01E41C0AB6540061571D /* CHCSVParserKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E8B01E31C0AB6540061571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		557FD04E1204A70D009FCDBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +284,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E8B01E01C0AB6540061571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E8B01EE1C0AB65F0061571D /* CHCSVParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		557FD04F1204A70D009FCDBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +358,106 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4E8B01EA1C0AB6540061571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CHCSVParserKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.CHCSVParserKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E8B01EB1C0AB6540061571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CHCSVParserKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.CHCSVParserKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -358,6 +533,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4E8B01EC1C0AB6540061571D /* Build configuration list for PBXNativeTarget "CHCSVParserKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E8B01EA1C0AB6540061571D /* Debug */,
+				4E8B01EB1C0AB6540061571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		557FD0571204A70E009FCDBA /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
