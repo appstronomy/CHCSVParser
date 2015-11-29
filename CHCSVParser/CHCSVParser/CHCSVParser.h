@@ -165,6 +165,8 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  */
 @property (readonly) NSUInteger totalBytesRead;
 
+- (instancetype)init __unavailable;
+
 /**
  *  The designated initializer
  *
@@ -241,6 +243,8 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 @end
 
 @interface CHCSVWriter : NSObject
+
+- (instancetype)init __unavailable;
 
 /**
  *  Initializes a @c CHCSVWriter to write to the provided file path. Assumes @c NSUTF8Encoding and the comma delimiter
