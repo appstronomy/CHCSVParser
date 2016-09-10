@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4E8B01E41C0AB6540061571D"
-               BuildableName = "CHCSVParserKit.framework"
-               BlueprintName = "CHCSVParserKit"
+               BuildableName = "CHCSVParserKit-iOS.framework"
+               BlueprintName = "CHCSVParserKit-iOS"
                ReferencedContainer = "container:CHCSVParser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E8B01E41C0AB6540061571D"
-            BuildableName = "CHCSVParserKit.framework"
-            BlueprintName = "CHCSVParserKit"
+            BuildableName = "CHCSVParserKit-iOS.framework"
+            BlueprintName = "CHCSVParserKit-iOS"
             ReferencedContainer = "container:CHCSVParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E8B01E41C0AB6540061571D"
-            BuildableName = "CHCSVParserKit.framework"
-            BlueprintName = "CHCSVParserKit"
+            BuildableName = "CHCSVParserKit-iOS.framework"
+            BlueprintName = "CHCSVParserKit-iOS"
             ReferencedContainer = "container:CHCSVParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
